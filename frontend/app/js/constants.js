@@ -9,3 +9,5 @@
 
 $$.S_FRONTEND = "http://localhost:8080";
 $$.S_NODE = "http://localhost:3800";
+
+S_HELLOSERVICE_URL = $$.S_NODE + "/hello";

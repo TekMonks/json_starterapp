@@ -22,5 +22,7 @@ Application.init = function() {
  */
 Application.main = function() {
 	// Entry point for the application
-	$$.loadthtml("app/main.thtml", {});
+	$$.rest(S_HELLOSERVICE_URL, {}, function(resp) {
+		$$.loadthtml("/app/main.thtml", resp);
+	});
 };
