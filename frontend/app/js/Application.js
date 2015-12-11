@@ -14,7 +14,7 @@ function Application() {}
  */
 Application.init = function() {
 	// No need for a Login - just go to the main page.
-	$$.S_NEEDS_LOGIN = false;
+	$$.loginRequired(false);
 };
 
 /**
